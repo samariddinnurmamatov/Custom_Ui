@@ -2,26 +2,120 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  padding: 3px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.load-wrapp {
+  float: left;
+  margin: 0 10px 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #d8d8d860;
+}
+
+.line {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #4b9cdb;
+}
+
+.load-3 .line:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+.load-3 .line:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+.load-3 .line:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+
+@keyframes loadingC {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+/* CustomSelect.css */
+.custom-select {
+  position: relative;
+  width: 200px; /* Adjust the width as needed */
+}
+
+.select-header {
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  position: relative;
+}
+
+.select-header.open {
+  border-radius: 5px 5px 0 0;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #000;
+  margin-right: 10px;
+}
+
+.select-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+}
+
+.select-options li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.select-options li:hover {
+  background: #f0f0f0;
+}
+
+.select-options li.selected {
+  background: #007BFF;
+  color: white;
+}
+
+
+.affix {
+  transition: none;
+}
+
+.affix.affix-fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: top 0.4s ease;
 }
