@@ -49,11 +49,9 @@
 }
 
 
-
-/* CustomSelect.css */
 .custom-select {
   position: relative;
-  width: 200px; /* Adjust the width as needed */
+  width: 200px;
 }
 
 .select-header {
@@ -108,10 +106,10 @@
 }
 
 
+
 .affix {
   transition: none;
 }
-
 .affix.affix-fixed {
   position: fixed;
   top: 0;

@@ -37,7 +37,7 @@ export default function Home() {
       <div>
         <Affix top={100}>
           <div className="affix-content transition-all">
-            Im an affixed element
+            Affixed element
           </div>
         </Affix>
         <div style={{ height: "1200px" }}></div>
