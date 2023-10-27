@@ -86,6 +86,11 @@ export interface AffixProps {
   children: React.ReactNode;
   // bottom: number;
 }
+export interface CustomAffixProps {
+  offsetTop: number;
+  offsetBottom?: number;
+  children: React.ReactNode;
+}
 
 export interface SectionProps {
   title: string;

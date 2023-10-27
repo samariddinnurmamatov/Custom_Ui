@@ -3,12 +3,10 @@ import Sections from "./sections";
 import TooltipWrapper from "./toolwrap";
 
 
-
-
 const AllSpin: FC = () => {
   return (
     <>
-      <div className="flex flex-col gap-10 items-center justify-center">
+      <div className="flex flex-col gap-10 items-center justify-center min-h-screen">
         <TooltipWrapper position="top" text="Hover Top" content="Salom" />{" "}
         <TooltipWrapper position="bottom" text="Hover Bottom" content="Salom" />
         <div className="flex py-[20px] gap-[20px]">

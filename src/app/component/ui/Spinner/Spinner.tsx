@@ -1,36 +1,3 @@
-// import React from "react";
-
-// const Spinner = () => {
-//   return (
-//       <div className="load-wrapp">
-//         <div className="load-3">
-//           <div className="line"></div>
-//           <div className="line"></div>
-//           <div className="line"></div>
-//         </div>
-//       </div>
-//   );
-// };
-
-// export default Spinner;
-
-// import React from "react";
-
-// const CustomSpinner = ({ loading, text }) => {
-//   if (loading) {
-//     return (
-//       <div className="spinner">
-//         <div className="spinner-animation"></div>
-//         <div className="spinner-text">Loading...</div>
-//       </div>
-//     );
-//   }
-
-//   return <div>{text}</div>;
-// };
-
-// export default CustomSpinner;
-
 import React from "react";
 import { SpinnerProps } from "@/app/types";
 
