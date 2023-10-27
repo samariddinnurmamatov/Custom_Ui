@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 import Sections from "./sections";
-import TooltipWrapper from "./toolWrapper";
+import TooltipWrapper from "./toolwrap";
+
+
 
 
 const AllSpin: FC = () => {
