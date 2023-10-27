@@ -75,7 +75,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col gap-[30px] max-w-[1000px] mx-auto py-[10px]">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 min-h-screen">
         <CustomAffix offsetTop={top} offsetBottom={bottom}>
           <button
             type="button"
